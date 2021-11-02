@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    function KyTuNguyenAm(arr) {
+        let count = 0
+        let str = arr.toLowerCase()
+        for (let i = 0; i < arr.length; i++) {
+            let ch = str.charAt(i)
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count += 1
+            }
+        }
+        if(count === 0) {
+            return false
+        }else if(count > 0) {
+            return "Số ký tự nguyên âm là : " + count
+        }
+    }
+    let kyTu= " LAP TRINH JAVASCRIPT"
+    alert( KyTuNguyenAm(kyTu))
+</script>
+
+</body>
+</html>

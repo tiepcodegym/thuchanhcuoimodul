@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    //tham số là 1 mảng và 1 số v bất kỳ
+    function checkMang(mang,v) {
+         boo = true
+        for (let i = 0; i < mang.length ; i++) {
+            if(mang[i] == v){
+                boo =false
+                document.write(+v+ " nằm trong mảng ở vị trí "+i)
+            }
+        }
+        if(boo == true){
+            document.write(+v+" không nằm trong mảng")
+        }
+    }
+    let arr=[1,2,3,4,77,5,6,7,8,9]
+    checkMang(arr,77)
+
+
+
+
+</script>
+
+</body>
+</html>

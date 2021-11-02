@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+    function giaiPT(a, b)
+    {
+        if (a == 0 && b == 0){
+           return  alert('Phương trình vô số nghiệm');
+        }
+        else if (a != 0 && b == 0){
+           return  alert('Phương trình có nghiệm x = 0');
+        }
+        else if (a == 0 && b != 0){
+           return  alert("Phương trình vô nghiệm");
+        }
+        else {
+           return  alert('Phương trình có nghiệm x = ' + (-b/a));
+        }
+    }
+    giaiPT(5,8)
+
+</script>
+
+</body>
+</html>
